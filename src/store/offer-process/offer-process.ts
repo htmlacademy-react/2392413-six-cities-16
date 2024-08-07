@@ -108,6 +108,7 @@ export const offerProcess = createSlice({
           state.offer.isFavorite = offer.isFavorite;
         }
         setIsFavoriteState(state.offers, offer);
+        setIsFavoriteState(state.nearbyOffers, offer);
       })
       .addCase(clearFavoritesOffers, (state) => {
         state.offers.map((offer) => (offer.isFavorite = false));
