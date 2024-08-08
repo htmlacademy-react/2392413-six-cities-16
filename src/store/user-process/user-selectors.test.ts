@@ -1,5 +1,5 @@
 import { AuthorizationStatus, NameSpace } from '../../const';
-import { AuthInfo, State } from '../../types';
+import { AuthInfo, State } from '../../types/types';
 import { makeFakeState } from '../../utils/mocks';
 import {
   getAuthCheckedStatus,

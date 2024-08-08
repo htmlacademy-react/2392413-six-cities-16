@@ -1,18 +1,18 @@
 import classNames from 'classnames';
 import { useState } from 'react';
-import CityList from '../components/city-list';
-import Map from '../components/map';
-import NoPlaces from '../components/no-places';
-import OfferSort from '../components/offer-sort';
-import PlaceCardList from '../components/place-card-list';
+import CityList from '../components/city-list/city-list';
+import Map from '../components/map/map';
+import NoPlaces from '../components/no-places/no-places';
+import OfferSort from '../components/offer-sort/offer-sort';
+import PlaceCardList from '../components/place-card-list/place-card-list';
 import { CityName } from '../const';
-import { useAppSelector } from '../hooks/store';
+import { useAppSelector } from '../hooks';
 import {
   getCurrentCity,
   getCurrentCityOffers,
   getOffersCount,
 } from '../store/offer-process/selectors';
-import { OfferEntity } from '../types';
+import { OfferEntity } from '../types/types';
 
 function Main(): JSX.Element {
   const currentCity = useAppSelector(getCurrentCity);

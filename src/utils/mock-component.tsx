@@ -6,9 +6,9 @@ import { createMemoryHistory, MemoryHistory } from 'history';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import HistoryRouter from '../components/history-route';
+import HistoryRouter from '../components/history-route/history-route';
 import { createAPI } from '../services/api';
-import { State } from '../types';
+import { State } from '../types/types';
 import { AppThunkDispatch } from './mocks';
 
 export function withHistory(component: JSX.Element, history?: MemoryHistory) {

@@ -7,7 +7,7 @@ import {
   OfferEntity,
   ReviewEntity,
   State,
-} from '../../types';
+} from '../../types/types';
 import { applySorting } from '../../utils/utils';
 
 export const getOffers = (state: State): OfferEntity[] =>

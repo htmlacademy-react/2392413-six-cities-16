@@ -1,4 +1,4 @@
-import { CityEntity } from './types';
+import { CityEntity } from './types/types';
 
 export enum AppRoute {
   Main = '/',

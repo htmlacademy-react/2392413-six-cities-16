@@ -1,15 +1,23 @@
 import { StatusCodes } from 'http-status-codes';
 import { Action } from 'redux';
 import { ThunkDispatch } from 'redux-thunk';
+import { createAPI } from '../services/api';
+import {
+  AuthInfo,
+  OfferDetailEntity,
+  OfferProcess,
+  State,
+  UserProcess,
+} from '../types/types';
+
+import { LoginAuth } from '../store/api-actions';
 import {
   AuthorizationStatus,
   Cities,
   NameSpace,
   PostReviewState,
   SortType,
-} from '../const';
-import { createAPI } from '../services/api';
-import { OfferDetailEntity, OfferProcess, State, UserProcess } from '../types';
+} from './../const';
 
 export type AppThunkDispatch = ThunkDispatch<
   State,
@@ -89,6 +97,19 @@ export const mockOffer: OfferDetailEntity = {
   rating: 2.5,
   bedrooms: 1,
   maxAdults: 1,
+};
+
+export const mockLoginAuth: LoginAuth = {
+  email: 'test@test.ru',
+  password: 't1',
+};
+
+export const mockAuthInfo: AuthInfo = {
+  avatarUrl: '/dev/null.img',
+  email: 'test@test.ru',
+  isPro: false,
+  name: 'Test Test',
+  token: 'TestToken#1',
 };
 
 export const makeFakeState = () => {

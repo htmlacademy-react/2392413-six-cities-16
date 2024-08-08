@@ -10,7 +10,7 @@ import {
   PostReview,
   ReviewEntity,
   State,
-} from '../types';
+} from '../types/types';
 import { clearFavoritesOffers } from './action';
 
 type AsyncThunkPropWithAxios = {
@@ -101,7 +101,7 @@ export const checkLoginAction = createAsyncThunk<
   return data;
 });
 
-type LoginAuth = {
+export type LoginAuth = {
   email: string;
   password: string;
 };

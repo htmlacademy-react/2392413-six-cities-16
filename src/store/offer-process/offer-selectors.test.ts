@@ -1,5 +1,5 @@
 import { Cities, NameSpace, SortType } from '../../const';
-import { State } from '../../types';
+import { State } from '../../types/types';
 import { makeFakeState } from '../../utils/mocks';
 import {
   getCurrentCityOffers,

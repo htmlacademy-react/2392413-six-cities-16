@@ -1,7 +1,6 @@
 import { createAction, PrepareAction } from '@reduxjs/toolkit';
-import { StatusCodes } from 'http-status-codes';
 import { AppRoute, SortType } from '../const';
-import { CityEntity } from '../types';
+import { CityEntity } from '../types/types';
 
 export const setCurrentCity = createAction<PrepareAction<CityEntity>>(
   'setCurrentCity',
@@ -16,5 +15,3 @@ export const setCurrentSort = createAction<PrepareAction<SortType>>(
 );
 
 export const redirectToRoute = createAction<AppRoute>('redirectToRoute');
-
-export const setResponseStatus = createAction<StatusCodes>('setResponseStatus');

@@ -1,5 +1,5 @@
 import { NameSpace } from '../../const';
-import { AuthInfo, State } from '../../types';
+import { AuthInfo, State } from '../../types/types';
 import { AuthorizationStatus } from './../../const';
 
 export const getAuthorizationStatus = (state: State): AuthorizationStatus =>
